@@ -30,12 +30,12 @@ function UserList() {
              <FilterSearch searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
              </div>
 
-            
+        <div className="d-flex flex-wrap justify-content-center">
           {filteredUsers.map((user) => (
                     <UserCard  key={user.id} user={user} onClick={(id) => setSelectedUserId(id)} />
                 ))
             }
-           
+           </div>
 
             <PostList userId={selectedUserId} onClose={() => setSelectedUserId(null)} />
 

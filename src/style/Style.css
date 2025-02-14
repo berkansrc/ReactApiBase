@@ -3,20 +3,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
  
-body {
-    background: #17ac23; 
+#root {
+    background: #474747; 
     font-size: 16px;
-    color: #333;
+    color: #f7efef;
     
   
 }
 
 .Container{
-    display: flex;
+display: flex;
 flex-wrap: wrap;
 justify-content: center;
 
@@ -25,7 +26,7 @@ justify-content: center;
 .userCard{
     border-radius: 30px;;
     border-bottom: 3px;
-    box-shadow: 0px 5px 10px 0px rgb(10, 10, 10); 
+    box-shadow: 0px 5px 10px 8px rgb(255, 255, 255); 
     width: 400px;
     padding: 30px;
     margin: 20px;
@@ -47,14 +48,18 @@ justify-content: center;
 
 .userCard:hover{
     transform: translateY(-5px);
-    box-shadow: 0px 10px 20px 2px rgba(230, 54, 10, 0.7);
+    box-shadow: 0px 10px 20px 5px #af194bb4;
  
 }
 
 
 .button-style{
-    margin-top: 100px;
+    margin-top: 0px;
     text-align: center;
+    padding: 100px;
+    height: 100px;
+    
+    
     
     
  }
@@ -63,20 +68,25 @@ justify-content: center;
  .inputStyle{
     border-radius: 10px;
     padding: 5px 10px;
+    width: 300px;
+    border-color: #0f0e0e;
+    
+   
    
    
  }
 
  .modal-content {
-    background: linear-gradient(135deg, #c5c0c5, #c7734a);
+    background: linear-gradient(135deg, #c5c0c5, #4b4847);
     border-radius: 12px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 .modal-header {
-    background: #c7734a; 
+    background: #c7738fb4; 
     color: white;
     border-bottom: 2px solid #fff;
 }
@@ -106,7 +116,7 @@ justify-content: center;
 
 .modal-footer .btn {
     background: white;
-    color: #c7734a;
+    color: #c7738fb4;
     font-weight: bold;
 }
 
