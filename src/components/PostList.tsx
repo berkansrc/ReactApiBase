@@ -16,6 +16,7 @@ function PostList({ userId, onClose }: PostProps) {
         })
     }, [userId])
     return (
+        <div className="opened">
         <Modal show={userId !== null} onHide={onClose}>
             <Modal.Header closeButton>
                 <Modal.Title>Modal heading</Modal.Title>
@@ -24,10 +25,10 @@ function PostList({ userId, onClose }: PostProps) {
 
                 {
                     posts.map((post) => (
-                        <>
+                        <div  key={post.id}>
                             <h1>{post.title}</h1>
                             <article>{post.body}</article>
-                        </>
+                        </div>
                     ))
                 }
             </Modal.Body>
@@ -35,6 +36,7 @@ function PostList({ userId, onClose }: PostProps) {
                 <Button variant="secondary" onClick={onClose}>Kapat</Button>
             </Modal.Footer>
         </Modal>
+        </div>
     )
 }
 

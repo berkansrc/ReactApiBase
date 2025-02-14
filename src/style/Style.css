@@ -1,0 +1,121 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ 
+body {
+    background: #17ac23; 
+    font-size: 16px;
+    color: #333;
+    
+  
+}
+
+.Container{
+    display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+.userCard{
+    border-radius: 30px;;
+    border-bottom: 3px;
+    box-shadow: 0px 5px 10px 0px rgb(10, 10, 10); 
+    width: 400px;
+    padding: 30px;
+    margin: 20px;
+    cursor: pointer;
+    
+}
+
+.completed {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+
+
+}
+
+.userCard:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(230, 54, 10, 0.7);
+ 
+}
+
+
+.button-style{
+    margin-top: 100px;
+    text-align: center;
+    
+    
+ }
+
+
+ .inputStyle{
+    border-radius: 10px;
+    padding: 5px 10px;
+   
+   
+ }
+
+ .modal-content {
+    background: linear-gradient(135deg, #c5c0c5, #c7734a);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    background: #c7734a; 
+    color: white;
+    border-bottom: 2px solid #fff;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-body {
+    font-size: 18px;
+    color: #333;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 15px;
+    text-align: justify;
+}
+
+
+.modal-body h1 {
+    font-size: 22px; 
+    margin-bottom: 10px; 
+    margin-top: 20px;
+    text-align: center; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.modal-footer .btn {
+    background: white;
+    color: #c7734a;
+    font-weight: bold;
+}
+
+ 
+
+
+
+
+ 
+
+
+

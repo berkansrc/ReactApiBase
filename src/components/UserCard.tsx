@@ -1,3 +1,4 @@
+
 import { UserParam } from "../types/users"
 
 
@@ -9,7 +10,8 @@ interface Props {
 function UserCard({ user, onClick }: Props) {
     return (
         <>
-            <div className="card mb-5" onClick={() => onClick(user.id)}>
+        <div className="completed mt-5" >
+            <div className="userCard" onClick={() => onClick(user.id)}>
                 <div>
                     {user.id}
                 </div>
@@ -28,6 +30,7 @@ function UserCard({ user, onClick }: Props) {
                 <div>
                     {user.website}
                 </div>
+            </div>
             </div>
         </>
     )
