@@ -3,8 +3,7 @@ import { UserParam } from "../types/users"
 import { fetchUsers } from "../services/api";
 import UserCard from "./UserCard";
 import PostList from "./PostList";
-import FilterSearch from "./FilterSearch";
-
+import FilterSearch from "./FilterSearch"; 
 function UserList() {
     const [users, setUsers] = useState<UserParam[]>([]);
     const [selectedUserId, setSelectedUserId] = useState<number | null>(null)
@@ -25,21 +24,21 @@ function UserList() {
     console.log(filteredUsers);
     return (
         <>
-         
-             <div className="button-style  ">
-             <FilterSearch searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-             </div>
 
-            
-          {filteredUsers.map((user) => (
-                    <UserCard  key={user.id} user={user} onClick={(id) => setSelectedUserId(id)} />
-                ))
+            <div className="button-style  ">
+                <FilterSearch searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+            </div>
+
+
+            {filteredUsers.map((user) => (
+                <UserCard key={user.id} user={user} onClick={(id) => setSelectedUserId(id)} />
+            ))
             }
-           
+
 
             <PostList userId={selectedUserId} onClose={() => setSelectedUserId(null)} />
 
-            
+
         </>
     )
 }
